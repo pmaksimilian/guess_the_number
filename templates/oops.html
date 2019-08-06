@@ -3,6 +3,12 @@
 {% block content %}
 <h3>Too bad, your number is {{message}}!</h3>
 
-<a href="/">You can try again!</a>
+<p>Please enter another number between 1 and 10:</p>
+<form method="post" action="/">
+    <input type="text" class="form-control" name="guess" placeholder="Enter your guess"><br>
+    <button type="submit" class="btn btn-outline-secondary">Submit</button>
+
+
+</form>
 
 {% endblock content %}
